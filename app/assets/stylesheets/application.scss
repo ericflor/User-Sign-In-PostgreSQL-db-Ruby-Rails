@@ -10,11 +10,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
-
+*= require_tree
  */
 @import "bootstrap";
 
-@import "responsive/*";
 
 body {
     margin-top: 50px;
@@ -34,13 +33,13 @@ body {
        -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
             box-shadow: 0 1px 2px rgba(0,0,0,.05);
   }
-  .border-form-div .form-signin-heading,
-  .border-form-div .checkbox {
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
     margin-bottom: 10px;
   }
-  .border-form-div input[type="text"],
-  .border-form-div input[type="email"],
-  .border-form-div input[type="password"] {
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
     font-size: 16px;
     height: auto;
     margin-bottom: 15px;
