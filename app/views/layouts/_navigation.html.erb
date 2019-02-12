@@ -9,10 +9,10 @@
         <li>
         <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
         </li>
-      <% else # user not signed it %>
+      <% else %>
       <li ><%= link_to 'Login', login_path %></li>
       
-      <% end # if user is signed it %>
+      <% end  %>
       
       <% if user_signed_in? %>
       <li>
