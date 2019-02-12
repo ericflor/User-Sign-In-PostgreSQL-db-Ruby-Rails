@@ -10,5 +10,14 @@ Rails.application.routes.draw do
       get 'signup', to: 'devise/registrations#new'
     end
   end
+
+  resources :posts do
+      collection do
+      get 'hobby'
+      get 'study'
+      get 'team'
+      end
+    end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
 end
